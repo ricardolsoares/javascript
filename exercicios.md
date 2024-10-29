@@ -1,5 +1,4 @@
-# Exercícios de JavaScript para Repositório GitHub
-
+# Exercícios de JavaScript conforme o indíce de conteúdo
 ## Índice
 - [2. Conceitos Básicos](#2-conceitos-básicos)
   - [Variáveis e Tipos de Dados](#variáveis-e-tipos-de-dados)

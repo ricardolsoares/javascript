@@ -1,9 +1,33 @@
+# Exercícios de JavaScript para Repositório GitHub
+
+## Índice
+- [2. Conceitos Básicos](#2-conceitos-básicos)
+  - [Variáveis e Tipos de Dados](#variáveis-e-tipos-de-dados)
+  - [Operadores](#operadores)
+  - [Estruturas de Controle](#estruturas-de-controle)
+  - [Loops](#loops)
+- [3. Funções](#3-funções)
+  - [Declaração e Invocação](#declaração-e-invocação)
+  - [Parâmetros e Argumentos](#parâmetros-e-argumentos)
+  - [Funções Anônimas e de Callback](#funções-anônimas-e-de-callback)
+  - [Arrow Functions](#arrow-functions)
+  - [Escopo de Variáveis](#escopo-de-variáveis)
+- [4. Arrays e Objetos](#4-arrays-e-objetos)
+  - [Criação e Manipulação de Arrays](#criação-e-manipulação-de-arrays)
+  - [Métodos de Arrays](#métodos-de-arrays)
+  - [Objetos](#objetos)
+  - [Iteração de Objetos e Arrays](#iteração-de-objetos-e-arrays)
+  - [JSON](#json)
+
+## 2. Conceitos Básicos
+
 ### Variáveis e Tipos de Dados
 1. Crie uma variável `nome` usando `let` e atribua o seu nome. Em seguida, crie uma constante `idade` com o valor da sua idade e imprima ambas no console.
 2. Declare uma variável `altura` com valor decimal e use `typeof` para verificar o tipo de dado dela. Exiba o resultado no console.
 3. Crie uma variável `isEstudante` e atribua `true` ou `false` dependendo do seu status. Imprima o valor e o tipo dessa variável.
 4. Crie um script que receba uma string numérica e a converta em número usando `Number()`. Depois, multiplique esse número por 10 e exiba o resultado.
 5. Declare uma constante que armazene o valor de `PI` e crie um cálculo para obter a área de um círculo usando essa constante.
+
 ### Operadores
 1. Declare duas variáveis `a` e `b` com valores numéricos e imprima o resultado das operações aritméticas (adição, subtração, multiplicação, divisão e módulo) entre elas.
 2. Crie duas variáveis `x` e `y` e use operadores de comparação para verificar se são iguais (`==`) e se são estritamente iguais (`===`). Imprima os resultados.
@@ -61,5 +85,21 @@
 3. Crie um loop `for` que declare uma variável `let` e tente acessar a variável fora do loop. Verifique se é possível.
 4. Defina uma função que tenha uma variável local e, fora dela, uma variável global com o mesmo nome. Teste como o JavaScript trata esses valores.
 5. Crie um exemplo que mostre a diferença entre `var`, `let` e `const` dentro de uma função e fora dela.
+
+## 4. Arrays e Objetos
+
+### Criação e Manipulação de Arrays
+1. Crie um array com 5 nomes de cidades e use um loop `for` para imprimir cada cidade.
+2. Use o método `push()` para adicionar um nome ao final do array de cidades e `pop()` para remover o último elemento.
+3. Crie um array de números e use o operador `[]` para acessar e modificar o segundo elemento do array.
+4. Use `unshift()` para adicionar elementos no início do array e `shift()` para remover o primeiro elemento. Verifique o resultado.
+5. Crie um array de números e calcule a soma de todos os elementos usando um loop `for`.
+
+### Métodos de Arrays
+1. Crie um array de números e use `map()` para retornar um novo array com os números multiplicados por 3.
+2. Use o método `filter()` para retornar apenas os números pares de um array de números.
+3. Crie um array de preços e use o método `reduce()` para calcular o valor total.
+4. Utilize `find()` para procurar um número específico em um array e retorne o valor encontrado.
+5. Use `forEach()` em um array de strings para imprimir cada string no console.
 
 [Voltar para o índice](#índice)

@@ -1,16 +1,10 @@
----
-layout: default
-title: "Exercícios de JavaScript - Nível Intermediário"
-description: "Exercícios práticos de JavaScript para nível intermediário, com foco em desenvolvimento de funcionalidades para sites. Aprenda criando scripts que podem ser aplicados diretamente em projetos reais."
----
+
 
 # Exercícios de JavaScript - Nível Intermediário
 
-![JavaScript para Web](https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png)
-
 Bem-vindo à página de exercícios intermediários de JavaScript! Estes exercícios têm como objetivo ajudá-lo a aplicar conceitos importantes de JavaScript em funcionalidades úteis para sites e páginas web.
 
-![Web Development Image](https://images.unsplash.com/photo-1505682634904-d7c22f13fcac?ixlib=rb-4.0.3&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+
 
 > Pratique JavaScript criando scripts que simulam funcionalidades reais de sites. Esse é o próximo passo na sua jornada como desenvolvedor web.
 

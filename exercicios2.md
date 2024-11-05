@@ -1,7 +1,7 @@
 ---
-layout: default
-title: "Exercícios de JavaScript - Nível Intermediário"
-description: "Exercícios práticos de JavaScript para nível intermediário, com foco em desenvolvimento de funcionalidades para sites. Aprenda criando scripts que podem ser aplicados diretamente em projetos reais."
+layout: padrão
+Título: "Exercícios de JavaScript - Nível Intermediário"
+Descrição: "Exercícios práticos de JavaScript para nível intermediário, com foco em desenvolvimento de funcionalidades para sites. Aprenda criando scripts que podem ser aplicados diretamente em projetos reais."
 ---
 
 # Exercícios de JavaScript - Nível Intermediário
@@ -9,7 +9,7 @@ description: "Exercícios práticos de JavaScript para nível intermediário, co
 
 Bem-vindo à página de exercícios intermediários de JavaScript! Estes exercícios têm como objetivo ajudá-lo a aplicar conceitos importantes de JavaScript em funcionalidades úteis para sites e páginas web.
 
-![Web Development Image](https://images.unsplash.com/photo-1505682634904-d7c22f13fcac?ixlib=rb-4.0.3&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+
 
 > Pratique JavaScript criando scripts que simulam funcionalidades reais de sites. Esse é o próximo passo na sua jornada como desenvolvedor web.
 
@@ -30,93 +30,76 @@ Bem-vindo à página de exercícios intermediários de JavaScript! Estes exercí
 ## 2. Conceitos Básicos para Web
 
 ### Manipulação de Elementos
-1. Crie uma página HTML com um botão que, ao ser clicado, altere o texto de um `<div>` para "Botão clicado!".
-2. Crie um script que adicione um novo item a uma lista `<ul>` toda vez que um botão "Adicionar Item" for clicado.
-3. Selecione um elemento `<img>` e altere o atributo `src` para trocar a imagem ao passar o mouse sobre ela.
-4. Crie um contador que aumenta em 1 cada vez que um botão for pressionado, exibindo o valor atual em um elemento `<span>`.
-5. Desenvolva um script que permita ao usuário adicionar parágrafos personalizados a uma página, usando um campo de texto e um botão.
+1. **Crie uma página HTML com um botão que, ao ser clicado, altere o texto de um `<div>` para "Botão clicado!".**
+   - Dica: Use o `getElementById()` para selecionar o `<div>` e `innerHTML` para alterar o texto.
+2. **Crie um script que adicione um novo item a uma lista `<ul>` toda vez que um botão "Adicionar Item" for clicado.**
+   - Dica: Use o método `createElement()` para criar um novo `<li>` e `appendChild()` para adicioná-lo à lista.
+3. **Selecione um elemento `<img>` e altere o atributo `src` para trocar a imagem ao passar o mouse sobre ela.**
+   - Dica: Use os eventos `onmouseover` e `onmouseout` para alternar o atributo `src` da imagem.
+4. **Crie um contador que aumenta em 1 cada vez que um botão for pressionado, exibindo o valor atual em um elemento `<span>`.**
+   - Dica: Use uma variável global para armazenar o valor do contador e `textContent` para atualizá-lo.
+5. **Desenvolva um script que permita ao usuário adicionar parágrafos personalizados a uma página, usando um campo de texto e um botão.**
+   - Dica: Use `value` do campo de texto e `createElement()` para criar novos parágrafos.
 
 [Voltar ao índice](#índice)
 
 ### Eventos e Interação com o Usuário
-1. Crie um evento que modifique a cor de fundo da página toda vez que o usuário pressionar uma tecla específica.
-2. Adicione um campo de texto e um evento `input` que exiba em tempo real a quantidade de caracteres digitados.
-3. Crie um menu dropdown que exibe e esconde itens ao clicar em um botão, simulando um menu responsivo.
-4. Implemente um botão que, ao ser pressionado, mude a visibilidade de uma imagem (exibir/ocultar).
-5. Desenvolva uma funcionalidade que permita ao usuário arrastar e soltar elementos dentro da página, alterando sua posição.
+1. **Crie um evento que modifique a cor de fundo da página toda vez que o usuário pressionar uma tecla específica.**
+   - Dica: Use o evento `keydown` e altere `document.body.style.backgroundColor`.
+2. **Adicione um campo de texto e um evento `input` que exiba em tempo real a quantidade de caracteres digitados.**
+   - Dica: Use o evento `input` e `value.length` para contar os caracteres.
+3. **Crie um menu dropdown que exibe e esconde itens ao clicar em um botão, simulando um menu responsivo.**
+   - Dica: Use `classList.toggle()` para adicionar/remover uma classe que controla a visibilidade dos itens.
+4. **Implemente um botão que, ao ser pressionado, mude a visibilidade de uma imagem (exibir/ocultar).**
+   - Dica: Use `style.display` para alternar entre `none` e `block`.
+5. **Desenvolva uma funcionalidade que permita ao usuário arrastar e soltar elementos dentro da página, alterando sua posição.**
+   - Dica: Use os eventos `dragstart`, `dragover` e `drop` para implementar a funcionalidade.
 
 [Voltar ao índice](#índice)
 
 ### Validação de Formulário
-1. Crie um formulário de login e implemente uma validação que exiba uma mensagem de erro se o campo de senha for deixado vazio.
-2. Adicione validação ao formulário para garantir que o campo de email contenha um valor válido antes do envio.
-3. Desenvolva um script que valide um formulário de contato, verificando se todos os campos obrigatórios foram preenchidos.
-4. Crie um campo de senha e outro de confirmação de senha, garantindo que ambos os valores sejam iguais antes de enviar o formulário.
-5. Implemente um sistema que exiba uma mensagem de "Envio bem-sucedido" após validar todos os campos corretamente.
+1. **Crie um formulário de login e implemente uma validação que exiba uma mensagem de erro se o campo de senha for deixado vazio.**
+   - Dica: Use `if` para verificar se `value` do campo de senha está vazio, e exiba uma mensagem de erro.
+2. **Adicione validação ao formulário para garantir que o campo de email contenha um valor válido antes do envio.**
+   - Dica: Use uma expressão regular (regex) para validar o formato do email.
+3. **Desenvolva um script que valide um formulário de contato, verificando se todos os campos obrigatórios foram preenchidos.**
+   - Dica: Use `querySelectorAll()` para selecionar todos os campos e verifique se cada um deles possui valor.
+4. **Crie um campo de senha e outro de confirmação de senha, garantindo que ambos os valores sejam iguais antes de enviar o formulário.**
+   - Dica: Compare os valores dos dois campos e exiba uma mensagem de erro se forem diferentes.
+5. **Implemente um sistema que exiba uma mensagem de "Envio bem-sucedido" após validar todos os campos corretamente.**
+   - Dica: Use `preventDefault()` para evitar o envio se a validação falhar, e exiba a mensagem quando todos os campos estiverem corretos.
 
 [Voltar ao índice](#índice)
 
 ### Manipulação de Estilos CSS
-1. Crie um botão que, ao ser pressionado, altere o estilo de todos os parágrafos da página para que tenham a cor de texto vermelha.
-2. Desenvolva um script que, ao clicar em um elemento `<div>`, aumente sua largura em 20 pixels.
-3. Adicione uma classe CSS a um elemento ao clicar em um botão, mudando sua aparência.
-4. Crie um sistema que mude a cor de fundo da página para uma cor aleatória cada vez que um botão for pressionado.
-5. Implemente um botão "Modo Escuro" que troque a folha de estilo da página para um tema escuro ao ser ativado.
+1. **Crie um botão que, ao ser pressionado, altere o estilo de todos os parágrafos da página para que tenham a cor de texto vermelha.**
+   - Dica: Use `querySelectorAll()` para selecionar todos os parágrafos e altere a propriedade `color`.
+2. **Desenvolva um script que, ao clicar em um elemento `<div>`, aumente sua largura em 20 pixels.**
+   - Dica: Use `element.style.width` e incremente o valor em pixels.
+3. **Adicione uma classe CSS a um elemento ao clicar em um botão, mudando sua aparência.**
+   - Dica: Use `classList.add()` para adicionar uma classe ao elemento.
+4. **Crie um sistema que mude a cor de fundo da página para uma cor aleatória cada vez que um botão for pressionado.**
+   - Dica: Gere uma cor aleatória usando `Math.random()` e aplique-a ao `backgroundColor`.
+5. **Implemente um botão "Modo Escuro" que troque a folha de estilo da página para um tema escuro ao ser ativado.**
+   - Dica: Use `classList.toggle()` para alternar entre os temas claro e escuro.
 
 [Voltar ao índice](#índice)
 
 ### Navegação Dinâmica
-1. Crie um script que permita navegar entre diferentes seções da página ao clicar em links, fazendo scroll suave até a seção correspondente.
-2. Desenvolva um menu fixo que destaque a seção atualmente visível ao fazer scroll na página.
-3. Implemente um botão "Voltar ao Topo" que leve o usuário de volta ao início da página ao ser pressionado.
-4. Crie um sistema de tabs onde o usuário pode alternar entre diferentes conteúdos ao clicar em diferentes abas.
-5. Desenvolva um script que altere o título da aba do navegador quando o usuário muda de seção na página.
+1. **Crie um script que permita navegar entre diferentes seções da página ao clicar em links, fazendo scroll suave até a seção correspondente.**
+   - Dica: Use `scrollIntoView({ behavior: 'smooth' })` para implementar o scroll suave.
+2. **Desenvolva um menu fixo que destaque a seção atualmente visível ao fazer scroll na página.**
+   - Dica: Use `IntersectionObserver` para detectar qual seção está visível.
+3. **Implemente um botão "Voltar ao Topo" que leve o usuário de volta ao início da página ao ser pressionado.**
+   - Dica: Use `window.scrollTo()` com `{top: 0, behavior: 'smooth'}`.
+4. **Crie um sistema de tabs onde o usuário pode alternar entre diferentes conteúdos ao clicar em diferentes abas.**
+   - Dica: Use `classList.add()` e `classList.remove()` para exibir/ocultar o conteúdo de cada aba.
+5. **Desenvolva um script que altere o título da aba do navegador quando o usuário muda de seção na página.**
+   - Dica: Use o evento `scroll` para alterar o título com base na seção visível.
 
 [Voltar ao índice](#índice)
 
 ## 3. Funções para Projetos Web
 
 ### Criação de Componentes Reutilizáveis
-1. Crie uma função que gere um card de produto com nome, preço e botão de "Comprar", e adicione esse card à página toda vez que for chamado.
-2. Desenvolva uma função que crie uma barra de progresso e a adicione ao documento, podendo ser utilizada em diferentes partes do site.
-3. Crie uma função que gere botões de compartilhamento para redes sociais, e adicione esses botões automaticamente ao final de artigos.
-4. Implemente uma função que crie uma janela modal para exibir informações detalhadas sobre um item quando solicitado.
-5. Crie uma função que gere automaticamente links de navegação com base em um array de seções.
-
-[Voltar ao índice](#índice)
-
-### Manipulação de Dados de Formulários
-1. Crie uma função que colete dados de um formulário de registro e armazene-os em um objeto JavaScript.
-2. Desenvolva uma função que receba dados de um formulário de contato e envie esses dados usando uma requisição `fetch` simulada.
-3. Crie uma função que limpe todos os campos de um formulário ao ser chamada, usando JavaScript.
-4. Implemente uma função que preencha automaticamente um formulário com dados fictícios, útil para testes de validação.
-5. Crie uma função que verifique se os dados de um campo de senha atendem a critérios específicos de segurança (mínimo de caracteres, símbolos, etc.).
-
-[Voltar ao índice](#índice)
-
-### Uso de Funções Anônimas e Callbacks
-1. Crie um evento de clique em um botão que utilize uma função anônima para mudar o conteúdo de um elemento `<p>`.
-2. Implemente um sistema de contagem regressiva usando `setInterval` e uma função anônima como callback para atualizar o valor na página.
-3. Crie uma função `executarDepois` que receba uma callback e um tempo, e execute a callback após o tempo definido usando `setTimeout`.
-4. Desenvolva um sistema que simule a verificação de disponibilidade de um item, usando `setTimeout` com uma função de callback para exibir o resultado.
-5. Crie uma lista de tarefas e use uma função de callback para marcar uma tarefa como concluída ao clicar sobre ela.
-
-[Voltar ao índice](#índice)
-
-### Arrow Functions em Sites
-1. Reescreva uma função que altera o estilo de um elemento para usar Arrow Function.
-2. Crie um script que utiliza Arrow Functions para manipular elementos de um array e exibi-los em um elemento `<div>`.
-3. Desenvolva uma Arrow Function que receba dois números e retorne sua multiplicação, e use-a para calcular valores em um formulário.
-4. Crie um evento que, ao ser disparado, use uma Arrow Function para exibir uma mensagem no console.
-5. Use Arrow Functions com o método `map()` para formatar uma lista de nomes, deixando todos os nomes em maiúsculas e exibindo na página.
-
-[Voltar ao índice](#índice)
-
-### Escopo e Modularidade no JavaScript
-1. Crie um script onde uma função local modifique variáveis globais e observe o comportamento.
-2. Desenvolva um módulo que contenha funções para manipulação de DOM e importe-as em outro script usando ES6 modules.
-3. Crie um exemplo que utilize o escopo de bloco com `let` e `const` dentro de uma função, observando o comportamento dessas variáveis.
-4. Organize suas funções em módulos diferentes para separar a lógica de manipulação de formulário, lógica de validação e manipulação de estilos.
-5. Desenvolva um script que utilize IIFE (Immediately Invoked Function Expression) para proteger o escopo das variáveis de um determinado bloco.
-
-[Voltar ao índice](#índice)
+1. **Crie uma
